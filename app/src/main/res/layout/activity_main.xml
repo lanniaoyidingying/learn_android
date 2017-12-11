@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.gittest.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_text"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/background_span"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/clickableSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clickable_span"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/forgroundColorSpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forground_span"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/maskfilterSpan"
+        style="@style/text_style"
+        android:text="@string/maskfilter_span"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/rasterizer_span"
+        style="@style/text_style"
+        android:text="@string/rasterizer_span"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/strikethrough_span"
+        style="@style/text_style"
+        android:text="@string/strikethrough_span"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/suggestionSpan"
+        style="@style/text_style"
+        android:text="@string/suggestion_span" />
+
+    <TextView
+        android:id="@+id/underlineSpan"
+        style="@style/text_style"
+        android:text="@string/underline_span" />
+
+    <TextView
+        android:id="@+id/absoluteSizeSpan"
+        style="@style/text_style"
+        android:text="@string/absolutesize_span" />
+
+    <TextView
+        android:id="@+id/dynamicDrawableSpan"
+        style="@style/text_style"
+        android:text="@string/dynamicdrawable_span" />
+
+    <TextView
+        android:id="@+id/imageSpan"
+        style="@style/text_style"
+        android:text="@string/image_span" />
+
+    <TextView
+        android:id="@+id/relativeSizeSpan"
+        style="@style/text_style"
+        android:text="@string/relativesize_span" />
+
+    <TextView
+        android:id="@+id/scaleXSpan"
+        style="@style/text_style"
+        android:text="@string/scaleX_span" />
+
+    <TextView
+        android:id="@+id/styleSpan"
+        style="@style/text_style"
+        android:text="@string/style_span" />
+<TextView
+        android:id="@+id/subscriptSpan"
+        style="@style/text_style"
+        android:text="@string/subscript_span" />
+<TextView
+        android:id="@+id/textAppearanceSpan"
+        style="@style/text_style"
+        android:text="@string/textappearance_span" />
+    <TextView
+        android:id="@+id/typeface"
+        style="@style/text_style"
+        android:text="@string/typeface_span" />
+    <TextView
+        android:id="@+id/url"
+        style="@style/text_style"
+        android:text="@string/URL_span" />
+    <TextView
+        android:id="@+id/superscriptSpan"
+        style="@style/text_style"
+        android:text="@string/superscript_span" />
+
+
+</LinearLayout>

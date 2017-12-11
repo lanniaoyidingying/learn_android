@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GitTest</string>
+    <string name="welcome_text">This is my first truly android app</string>
+    <string name="clickable_span">This is a clickable span</string>
+    <string name="forground_span">This is forground color span</string>
+    <string name="maskfilter_span">This is maskFilter span</string>
+    <string name="rasterizer_span">This is rasterizer span</string>
+    <string name="strikethrough_span">This is strikethrough span</string>
+    <string name="suggestion_span">This is suggestion span</string>
+    <string name="underline_span">This is underline span</string>
+    <string name="absolutesize_span">This is absolutesize span</string>
+    <string name="dynamicdrawable_span">This is dynamicdrawable span</string>
+    <string name="image_span">This is image span</string>
+    <string name="relativesize_span">This is relativesize span</string>
+    <string name="replacement_span">This is replacement span</string>
+    <string name="scaleX_span">This is scaleX span</string>
+    <string name="style_span">This is style span</string>
+    <string name="subscript_span">This is subscript span</string>
+    <string name="superscript_span">This is superscript span</string>
+    <string name="textappearance_span">This is textappearance span</string>
+    <string name="typeface_span">This is typeface span</string>
+    <string name="URL_span">This is URL span</string>
+</resources>
