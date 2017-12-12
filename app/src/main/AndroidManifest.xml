@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.gittest">
-    <!--label represent the app's name on desttop-->
-    <!-- icon means the app's icon on the desttop-->
-    <!-- roundicon means the app's roundicon on the desttopwhenyousetup-->
+
+    <!-- label represent the app's name on desttop -->
+    <!-- icon means the app's icon on the desttop -->
+    <!-- roundicon means the app's roundicon on the desttopwhenyousetup -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-
-        android:label="@string/app_name"
+        android:label="this is android first try"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="com.example.administrator.gittest.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="tian.wang.gai.di.hu" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HelloWorldActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaiduActivity">
+            <intent-filter>
+            <action android:name="Intent.ACTION_VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:scheme="http"/>
             </intent-filter>
         </activity>
     </application>
