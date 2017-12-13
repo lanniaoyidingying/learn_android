@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.gittest.lifeCycle.NormalActivity">
+    <Button
+        android:id="@+id/start_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="normal"/>
+    <Button
+        android:id="@+id/start_btnOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btnOther"/>
+    <Button
+        android:id="@+id/start_normal_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="normal_mode"/>
+    <Button
+        android:id="@+id/start_singleTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleTop"/>
+    <Button
+        android:id="@+id/start_singleTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleTask"/>
+    <Button
+        android:id="@+id/start_singleInstance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleInstance"/>
+
+</LinearLayout>

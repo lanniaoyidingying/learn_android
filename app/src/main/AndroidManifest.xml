@@ -20,27 +20,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             -->
+            <!--
             <intent-filter>
                 <action android:name="com.example.administrator.gittest.MainActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="tian.wang.gai.di.hu" />
             </intent-filter>
+            -->
         </activity>
-        <activity android:name=".HelloWorldActivity">
+        <activity android:name=".HelloWorldActivity" />
+        <activity android:name=".BaiduActivity">
+            <intent-filter>
+                <action android:name="Intent.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FirstActivity" />
+        <activity android:name=".activity.SecondActivity" />
+        <activity android:name=".activity.LifeCycleActivity"></activity>
+        <activity android:name=".lifeCycle.NormalActivity"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaiduActivity">
-            <intent-filter>
-            <action android:name="Intent.ACTION_VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <data android:scheme="http"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".lifeCycle.OtherActivity"></activity>
+        <activity android:name=".lifeCycle.DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"></activity>
     </application>
 
 </manifest>
