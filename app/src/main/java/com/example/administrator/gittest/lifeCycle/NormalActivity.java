@@ -1,7 +1,9 @@
 package com.example.administrator.gittest.lifeCycle;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.PersistableBundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,8 +12,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.administrator.gittest.R;
+import com.example.administrator.gittest.base.BaseActivity;
+import com.example.administrator.gittest.utils.AlertDialogCreater;
 
-public class NormalActivity extends AppCompatActivity {
+public class NormalActivity extends BaseActivity {
 private static final String TAG = "Activity";
 private static final String Tag = "AppCompat";
     private Button btnNormal;
@@ -20,6 +24,7 @@ private static final String Tag = "AppCompat";
     private Button btnSingleTop;
     private Button btnSingleTask;
     private Button btnNormalSingleInstance;
+    private Button btnDialogShow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +77,13 @@ private static final String Tag = "AppCompat";
                 startActivity(new Intent(NormalActivity.this,NormalActivity.class));
             }
         });
+        btnDialogShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final AlertDialog sAlertDialog = AlertDialogCreater.getAlertDialog(NormalActivity.this,"Dialog","this is myDialog");
+
+            }
+        });
     }
 
     private void initView() {
@@ -81,6 +93,7 @@ private static final String Tag = "AppCompat";
         btnSingleTop = (Button)findViewById(R.id.start_singleTop);
         btnSingleTask = (Button)findViewById(R.id.start_singleTask);
         btnNormalSingleInstance = (Button)findViewById(R.id.start_singleInstance);
+        btnDialogShow = (Button)findViewById(R.id.btnDialogShow);
     }
 
     @Override

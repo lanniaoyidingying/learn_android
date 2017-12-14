@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.administrator.gittest.R;
+import com.example.administrator.gittest.base.BaseActivity;
+import com.example.administrator.gittest.utils.ActivityCollections;
 
-public class DialogActivity extends AppCompatActivity {
+public class DialogActivity extends BaseActivity {
 private static final String TAG = "Activity";
     private Button btnNormal;
 
@@ -60,5 +62,10 @@ private static final String TAG = "Activity";
     protected void onStop() {
         super.onStop();
         Log.e(TAG, "onStop: DialogActivity" );
+    }
+
+    @Override
+    public void onBackPressed() {
+        ActivityCollections.finishAll();
     }
 }

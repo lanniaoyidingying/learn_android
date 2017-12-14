@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.administrator.gittest.R;
+import com.example.administrator.gittest.base.BaseActivity;
+import com.example.administrator.gittest.utils.ActivityCollections;
 
-public class OtherActivity extends AppCompatActivity {
+public class OtherActivity extends BaseActivity {
 
     private static final String TAG = "Activity";
     private static final String Tag = "AppCompat";
@@ -37,6 +39,7 @@ public class OtherActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+       // s.finishAActivityCollectionll();
         super.onDestroy();
         Log.e(TAG, "onDestroy: OtherActivity" );
     }

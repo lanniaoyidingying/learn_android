@@ -43,7 +43,7 @@
         <activity android:name=".activity.SecondActivity" />
         <activity android:name=".activity.LifeCycleActivity"></activity>
         <activity android:name=".lifeCycle.NormalActivity"
-            android:launchMode="singleInstance">
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
