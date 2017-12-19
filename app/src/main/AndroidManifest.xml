@@ -41,17 +41,23 @@
         </activity>
         <activity android:name=".activity.FirstActivity" />
         <activity android:name=".activity.SecondActivity" />
-        <activity android:name=".activity.LifeCycleActivity"></activity>
-        <activity android:name=".lifeCycle.NormalActivity"
+        <activity android:name=".activity.LifeCycleActivity" />
+        <activity
+            android:name=".lifeCycle.NormalActivity"
             android:launchMode="standard">
+
+        </activity>
+        <activity android:name=".lifeCycle.OtherActivity" />
+        <activity
+            android:name=".lifeCycle.DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activity.ui.CommonComponentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lifeCycle.OtherActivity"></activity>
-        <activity android:name=".lifeCycle.DialogActivity"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
     </application>
 
 </manifest>
