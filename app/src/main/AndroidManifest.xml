@@ -44,14 +44,13 @@
         <activity android:name=".activity.LifeCycleActivity" />
         <activity
             android:name=".lifeCycle.NormalActivity"
-            android:launchMode="standard">
-
-        </activity>
+            android:launchMode="standard"></activity>
         <activity android:name=".lifeCycle.OtherActivity" />
         <activity
             android:name=".lifeCycle.DialogActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".activity.ui.CommonComponentActivity">
+        <activity android:name=".activity.ui.CommonComponentActivity"></activity>
+        <activity android:name=".activity.layout.LayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
