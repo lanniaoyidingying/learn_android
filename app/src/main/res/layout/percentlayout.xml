@@ -5,8 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 <Button
-    app:layout_widthPercent="500%"
-    android:layout_height="wrap_content"
-    android:text="button"
-    android:layout_gravity="left|top"/>
+    app:layout_widthPercent="50%"
+    app:layout_heightPercent="50%"
+    android:text="button1"
+    android:layout_gravity="left|top" />
+    <Button
+    app:layout_widthPercent="50%"
+    app:layout_heightPercent="50%"
+    android:text="button2"
+    android:layout_gravity="right|top" />
+
+    <Button
+        android:layout_gravity="left|bottom"
+        android:text="button3"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+    <Button
+        android:layout_gravity="right|bottom"
+        android:text="button4"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
 </android.support.percent.PercentFrameLayout>
