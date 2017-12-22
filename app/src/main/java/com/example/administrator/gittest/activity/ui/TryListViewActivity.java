@@ -2,6 +2,8 @@ package com.example.administrator.gittest.activity.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -49,8 +51,15 @@ public class TryListViewActivity extends AppCompatActivity {
         mListView1 = (ListView)findViewById(R.id.listview1);
         //ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mDatas);
         //mListView.setAdapter(mAdapter);
-        Toast.makeText(this,""+lists.toString(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,""+lists.toString(),Toast.LENGTH_SHORT).show();
         FruitAdapter mAdapter = new FruitAdapter(this,R.layout.fruits_list,lists);
         mListView1.setAdapter(mAdapter);
+
+        mListView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(),""+lists.get(i),Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
