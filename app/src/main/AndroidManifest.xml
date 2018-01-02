@@ -51,10 +51,12 @@
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".activity.ui.CommonComponentActivity" />
         <activity android:name=".activity.layout.LayoutActivity" />
-        <activity android:name=".activity.layout.CustomActivity"></activity>
-        <activity android:name=".activity.ui.TryListViewActivity">
-        </activity>
+        <activity android:name=".activity.layout.CustomActivity" />
+        <activity android:name=".activity.ui.TryListViewActivity"></activity>
         <activity android:name=".activity.ui.TryRecyclerViewActivity">
+
+        </activity>
+        <activity android:name=".activity.NinePatchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
